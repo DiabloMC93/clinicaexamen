@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Estudio - Enlaces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,0.2) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,0.1) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+        
+        .card-hover-effect {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.15), 0 10px 10px -5px rgba(59, 130, 246, 0.05);
+            border-color: rgba(96, 165, 250, 0.5);
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="text-gray-200 min-h-screen flex flex-col items-center justify-center p-6 sm:p-12">
+
+    <div class="w-full max-w-5xl mx-auto">
+        
+        <header class="text-center mb-16 fade-in-up">
+            <div class="inline-block p-3 rounded-2xl bg-blue-500/10 mb-4 border border-blue-500/20">
+                <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">
+                    Portal Médico
+                </span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                Accede rápidamente a todos tus simulacros, cuestionarios y recursos de estudio desde un solo lugar.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            
+            <!-- Tarjeta Clínica 201 -->
+            <a href="https://diablomc93.github.io/clinica201/" target="_blank" class="block group fade-in-up delay-100">
+                <div class="h-full bg-slate-800/50 backdrop-blur-sm p-8 rounded-3xl border border-slate-700 card-hover-effect flex flex-col relative overflow-hidden">
+                    
+                    <!-- Decoración de fondo -->
+                    <div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-emerald-500/10 blur-2xl group-hover:bg-emerald-500/20 transition-colors duration-300"></div>
+                    
+                    <div class="w-14 h-14 bg-slate-700/80 rounded-2xl flex items-center justify-center mb-6 text-emerald-400 border border-slate-600 group-hover:scale-110 group-hover:bg-emerald-500/20 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors">Clínica 201</h2>
+                    <p class="text-slate-400 mb-6 flex-grow">
+                        Accede al módulo de cuestionarios y repasos correspondientes al bloque de Clínica 201.
+                    </p>
+                    <div class="flex items-center text-sm font-semibold text-emerald-400 mt-auto">
+                        <span>Acceder al test</span>
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Tarjeta Clínica 202 -->
+            <a href="https://diablomc93.github.io/clinica202/" target="_blank" class="block group fade-in-up delay-200">
+                <div class="h-full bg-slate-800/50 backdrop-blur-sm p-8 rounded-3xl border border-slate-700 card-hover-effect flex flex-col relative overflow-hidden">
+                    
+                    <!-- Decoración de fondo -->
+                    <div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-blue-500/10 blur-2xl group-hover:bg-blue-500/20 transition-colors duration-300"></div>
+
+                    <div class="w-14 h-14 bg-slate-700/80 rounded-2xl flex items-center justify-center mb-6 text-blue-400 border border-slate-600 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">Clínica 202</h2>
+                    <p class="text-slate-400 mb-6 flex-grow">
+                        Entra para resolver los casos y preguntas teóricas enfocadas en el temario de Clínica 202.
+                    </p>
+                    <div class="flex items-center text-sm font-semibold text-blue-400 mt-auto">
+                        <span>Acceder al test</span>
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Tarjeta Examen 2025 -->
+            <a href="https://diablomc93.github.io/examen2025/" target="_blank" class="block group fade-in-up delay-300">
+                <div class="h-full bg-slate-800/50 backdrop-blur-sm p-8 rounded-3xl border border-slate-700 card-hover-effect flex flex-col relative overflow-hidden">
+                    
+                    <!-- Decoración de fondo -->
+                    <div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-purple-500/10 blur-2xl group-hover:bg-purple-500/20 transition-colors duration-300"></div>
+
+                    <div class="w-14 h-14 bg-slate-700/80 rounded-2xl flex items-center justify-center mb-6 text-purple-400 border border-slate-600 group-hover:scale-110 group-hover:bg-purple-500/20 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">Examen 2025</h2>
+                    <p class="text-slate-400 mb-6 flex-grow">
+                        Simulacro global. Pon a prueba todos tus conocimientos de cara a la preparación final del 2025.
+                    </p>
+                    <div class="flex items-center text-sm font-semibold text-purple-400 mt-auto">
+                        <span>Iniciar simulacro</span>
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <footer class="mt-20 text-center text-slate-500 text-sm fade-in-up delay-300">
+            <p>© 2025 - Plataforma de simulacros médicos. Selecciona un módulo para comenzar.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
